@@ -23,7 +23,15 @@ void menuPrincipal(){
     printf("## "NEGRITO VERMELHO"0 - Sair"RESET"                                 ##\n");
     printf("##                                          ##\n");
     printf("##############################################\n");
-
 }
+
+void menuAdicionar(){
+    printf("##############################################\n");
+    printf("##                                          ##\n");
+    printf("##       "AMARELO"Adicionar Tarefa"RESET"               ##\n");
+    printf("##                                          ##\n");
+    printf("##############################################\n");
+}
+
 
 #endif
