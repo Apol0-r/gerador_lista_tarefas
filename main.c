@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <locale.h>
 
-// MODULOS UTILIZADOS PARA A ELABORA√á√ÉO DO PROJETO
+// MODULOS UTILIZADOS PARA A ELABORA«√O DO PROJETO
 #include "modulos/ferramentas.h"
 #include "modulos/textos.h"
 
 
 int main(void){
-    setlocale(LC_ALL, "pt_BR.UTF-8");
+    setlocale(LC_ALL, "Portuguese");
     int opcao;
 
-    while (opcao != 0){
+    do{
         limparTela();
         menuPrincipal();
-        printf(NEGRITO"Digite a "CIANO"op√ß√£o "RESET"desejada: ");
+        printf(NEGRITO"Digite a "CIANO"opÁ„o "RESET"desejada: ");
         scanf("%d", &opcao);
 
         switch (opcao){
@@ -33,10 +33,14 @@ int main(void){
             printf("Saindo...\n");
             break;  
         default:
-            printf(VERMELHO"Op√ß√£o inv√°lida!\n"RESET);
+            printf(VERMELHO"OpÁ„o inv·lida!\n"RESET);
             break;
         }
-    }
+
+        printf("Pressione ENTER para continuar...");
+        getchar();
+        getchar();
+    }while (opcao != 0);
 
     return 0;
 }
