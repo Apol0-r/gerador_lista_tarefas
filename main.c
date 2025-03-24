@@ -5,6 +5,9 @@
 #include "modulos/ferramentas.h"
 #include "modulos/textos.h"
 
+#include "modulos/manipulacao_dados/procedimentos.h"
+#include "modulos/manipulacao_dados/procedimentos.c"
+
 
 int main(void){
     setlocale(LC_ALL, "Portuguese");
@@ -18,7 +21,7 @@ int main(void){
 
         switch (opcao){
         case 1:
-            printf("Adicionar Tarefa\n");
+            adicionarTarefa();
             break;
         case 2:
             printf("Listar Tarefas\n");
@@ -36,10 +39,9 @@ int main(void){
             printf(VERMELHO"Opção inválida!\n"RESET);
             break;
         }
+        respiro();
 
-        printf("Pressione ENTER para continuar...");
-        getchar();
-        getchar();
+        
     }while (opcao != 0);
 
     return 0;

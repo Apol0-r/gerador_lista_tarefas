@@ -14,6 +14,7 @@
 #define MAGENTA    "\033[35m"
 
 void limparTela();
+void respiro();
 
 void limparTela(){
     #if _WIN32
@@ -21,6 +22,12 @@ void limparTela(){
     #else
         system("clear");
     #endif  
+}
+
+void respiro(){
+    printf(NEGRITO"Pressione "VERDE"ENTER "RESET"para continuar...");
+    getchar();
+    getchar();
 }
 
 

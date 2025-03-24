@@ -28,7 +28,7 @@ void menuPrincipal(){
 void menuAdicionar(){
     printf("##############################################\n");
     printf("##                                          ##\n");
-    printf("##       "AMARELO"Adicionar Tarefa"RESET"               ##\n");
+    printf("##       "AMARELO"Adicionar Tarefa"RESET"                   ##\n");
     printf("##                                          ##\n");
     printf("##############################################\n");
 }
